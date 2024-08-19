@@ -47,8 +47,7 @@ export default function Page() {
       {/* Content Section */}
       <div className="relative mt-20 bg-cover bg-center" 
         style={{ backgroundImage: "url('/home.jpg')", height: "170vh" }}>
-          <div className="absolute inset-0 flex items-start justify-center mx-5 
-                          flex-col">
+          <div className="absolute inset-0 flex items-start justify-center mx-5 text-black flex-col">
             <p className="text-4xl mx-5">SEEKING ONE OF THE BEST</p>
             <p className="text-4xl font-bold m-5">TAX CONSULTANT IN CALGARY?</p>
             <p className="m-5 text-2xl font-bold">Habesha Tax Consultant is an accounting <br />
