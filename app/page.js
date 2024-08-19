@@ -93,7 +93,7 @@ export default function Page() {
         </div> 
       </div>
 
-      <div className="flex justify-between m-3">
+      <div className="flex justify-between m-3 bg-white">
         <p className="flex items-center gap-2">
           <FontAwesomeIcon icon={faCopyright} className="w-5"/>          
           <span className="ml-2">Copyright 2024 Habesha Tax Consultant Inc.</span>
