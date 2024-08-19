@@ -7,7 +7,7 @@ export default function Page() {
     <main className="font-serif h-screen overflow-y-auto">
       {/* Fixed Header */}
       <div className="fixed top-0 left-0 right-0 bg-white z-50">
-        <div className="flex gap-10 m-3">
+      <div className="flex gap-10 m-3">
           <p className="flex gap-2 hover:text-gray-500 hover:underline">
             <a href="tel:000-000-0000" className="flex items-center">
             <FontAwesomeIcon icon={faPhone} className="w-5"/>
@@ -22,14 +22,13 @@ export default function Page() {
           </p>
         </div>
 
-
         <div className="flex justify-between text-2xl font-serif bg-green-500 p-3 text-black">
           <div className="m-3">
             <p className="font-bold">Habesha Tax Consultant</p>
           </div>
           <div className="flex gap-10 m-3">
             <p className="hover:text-gray-500 hover:underline">
-              <Link href="./">Home</Link>
+              <Link href="/.">Home</Link>
             </p>
             <p className="hover:text-gray-500 hover:underline">
               <Link href="/about">About us</Link>
@@ -45,17 +44,29 @@ export default function Page() {
       </div>
 
       {/* Content Section */}
-      <div className="relative mt-20 bg-cover bg-center" 
-        style={{ backgroundImage: "url('/home.jpg')", height: "170vh" }}>
-          <div className="absolute inset-0 flex items-start justify-center mx-5 
-                          flex-col">
-            <p className="text-4xl mx-5">SEEKING ONE OF THE BEST</p>
-            <p className="text-4xl font-bold m-5">TAX CONSULTANT IN CALGARY?</p>
-            <p className="m-5 text-2xl font-bold">Habesha Tax Consultant is an accounting <br />
-              and advisory firm based in Calgary here to help. Call now!</p>
-          </div>
-      </div>       
-      
+      <div className="mt-40 mb-20 bg-cover bg-center" style={{ backgroundImage: "url('/services.jpg')", height: "200vh" }}>
+      <div className="flex justify-center">
+        <div className="flex flex-col justify-center items-center font-serif text-black font-bold
+                        bg-gray-300 p-6 rounded-lg w-1/3">
+            <p className="text-5xl font-bold">Our Services</p>
+            <hr className="w-1/2 border-t-2 border-black mb-5" />
+            <ul className="list-disc list-inside text-lg">
+                <li>Individual/Family Tax Return(T1)</li>
+                <li>Corporate Tax Filing (T2)</li>
+                <li>Tax Planning and Strategy</li>
+                <li>Estate and Trust Tax Returns (T3)</li>
+                <li>GST/HST Filing</li>
+                <li>Payroll Tax Services</li>
+                <li>Terminal Returns</li>
+                <li>Retirement Tax Planning</li>
+                <li>Disability Tax Credits</li>
+                <li>Tax Relief and Resolution</li>
+                <li>Year-Round Tax Advisory Services</li>
+            </ul>
+        </div>
+      </div>        
+      </div>
+
       <div className="flex justify-evenly text-lg font-serif bg-green-500 p-3 text-black">
         <div className="m-3">
           <p className="font-bold">Habesha Tax Consultant</p>
@@ -91,7 +102,7 @@ export default function Page() {
           </div>
           <p>Monday - Saturday: 8AM to 5PM</p>
           <p>Sunday: Closed</p>           
-        </div> 
+        </div>  
       </div>
 
       <div className="flex justify-between m-3">
@@ -101,6 +112,7 @@ export default function Page() {
         </p>
         <p>Designed by: Robel Chane</p>
       </div>
+
     </main>
   );
 }
