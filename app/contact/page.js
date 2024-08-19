@@ -39,7 +39,7 @@ export default function Page() {
   };
 
   return (
-    <main className="font-serif h-screen overflow-y-auto">
+    <main className="font-serif h-screen overflow-y-auto text-black">
       {/* Fixed Header */}
       <div className="fixed top-0 left-0 right-0 bg-white z-50">
       <div className="flex gap-10 m-3">
